@@ -35,12 +35,12 @@
 # }
 
 # #initialize webcam
-# cap=cv2.VideoCapture(0)
+# cap=cv2.VideoCapture(10)
 
 
 # #font for emoji overlay(using pil)
 # # font=ImageFont.truetype("Apple color Emoji.ttc",80)
-# font = ImageFont.truetype("seguiemj.ttf", 40)
+# font = ImageFont.truetype("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)
 # while cap.isOpened():
 #     ret,frame=cap.read()
 #     # print(ret,frame)
@@ -154,10 +154,10 @@ emoji_dict = {
 }
 
 # Load emoji font
-font = ImageFont.truetype("seguiemj.ttf", 40)
+font = ImageFont.truetype("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)
 
 # Open webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(10)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)   # Lower resolution for better speed
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 

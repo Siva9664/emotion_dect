@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emotion Mirror | AI Recognition</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><header><b>◉ emotion<span>mirror</span></b><small>● AI MODEL READY</small></header>
+<main><section class="intro"><small>REAL-TIME FACIAL EXPRESSION AI</small><h1>Your face tells<br><em>a story.</em></h1>
+<p>A live emotion mirror powered by your camera and a trained Mini Xception model.</p></section>
+<section class="layout"><article class="panel"><div class="heading"><div><small>LIVE INPUT</small><h2>Camera preview</h2></div><span id="status">● STANDBY</span></div>
+<div class="view"><video id="video" autoplay playsinline muted></video><div id="placeholder">◎<b>Your camera view appears here</b><small>Allow camera access to begin</small></div><canvas id="capture" hidden></canvas></div>
+<div class="actions"><button id="start">▶ Start camera</button><button id="stop" disabled>Stop</button></div><small class="privacy">Camera frames are sent for prediction only.</small></article>
+<article class="panel"><small>AI ANALYSIS</small><h2>Emotion detected</h2><div class="result"><div id="emoji">◎</div><h2 id="emotion">Waiting</h2><p id="hint">Start your camera to see your result</p></div>
+<div class="meterlabel">Prediction confidence <b id="confidence">—</b></div><div class="meter"><i id="bar"></i></div><hr><div class="heading"><small>EMOTION BREAKDOWN</small><small>SCORES</small></div><div id="scores"></div></article></section>
+<p class="footnote">Seven classes: Angry · Disgust · Fear · Happy · Sad · Surprise · Neutral<br>Experimental expression classifier; predictions do not reliably establish a person's actual feelings.</p>
+</main><script src="/static/app.js"></script></body></html>

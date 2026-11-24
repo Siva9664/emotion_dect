@@ -1,0 +1,6 @@
+Flask==3.0.3
+gunicorn==22.0.0
+tensorflow-cpu==2.15.1
+mediapipe==0.10.21
+opencv-contrib-python==4.10.0.84
+numpy==1.26.4
